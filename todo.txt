@@ -1,0 +1,6 @@
+Todo:
+
+- Settings:
+  - always on top
+  - color
+  - with/without seconds
