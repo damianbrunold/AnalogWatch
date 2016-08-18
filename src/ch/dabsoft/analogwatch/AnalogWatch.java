@@ -9,6 +9,7 @@ import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.util.prefs.Preferences;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.Timer;
 
@@ -19,6 +20,7 @@ public class AnalogWatch extends JFrame implements ActionListener {
     public AnalogWatch() {
         super();
         setUndecorated(true);
+        setIconImage(new ImageIcon(AnalogWatch.class.getResource("/icon.png")).getImage());
         AnalogWatchComponent component = new AnalogWatchComponent(this); 
         addComponentListener(new ComponentAdapter() {
             @Override
